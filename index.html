@@ -26,6 +26,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>function cook() {const ids=[5,5,5,3,2,4,4,5,2,3,1,4,3,4,4,2] ;var qf=document.getElementById('qf');var oreos=0;var gps=qf.querySelectorAll('input[type="radio"]');gps.forEach(function(g){var s=qf.querySelector('input[name="' + g.name + '"]:checked');if (s && s.value === 'v' + ids[g.name.charCodeAt(0)-97]){oreos += 0.2;}});document.getElementById("result").innerHTML = "You scored " + Math.round(oreos).toString() + "/16." ;}</script>
     <style>
 table {
     font-family: arial, sans-serif;
@@ -137,8 +138,8 @@ tr:nth-child(even) {
                 </div>
             </div>
             <p class="lead">
-				<b>Maision Grizzle</b>:  We tried to capture the biggest achievement of Jessy's career in the following diagram:
-				<a href="img/Maison-Grizzle-for-web-high-res.png"><img src="img/Maison-Grizzle-for-web.jpg" alt="Maison Grizzle" width="100%" height="auto"></a>
+				<b>Maison Grizzle</b>:  We tried to capture the biggest achievement of Jessy's career in the following diagram:
+				<a href="img/Maison-Grizzle-for-web-high-res.png"><img src="img/Maison-Grizzle-for-web.jpg" alt="Maison Grizzle" width="100%" height="auto"><small>[high-res]</small></a>
             </p>
             <hr/>
             <p class="lead">
@@ -182,9 +183,143 @@ tr:nth-child(even) {
 			</p>
 			<hr/>
 			<p class="lead">
-				<b>Trivia</b>:  Discover fascinating facts and stories about Jessy's incredible life and experiences!
-
-				Coming soon...
+				<b>Trivia</b>:
+				How well do you know Jessy?
+				Discover fascinating facts and stories about Jessy's incredible life and experiences!
+				<form id="qf">
+					<ol>
+						<li>
+							In the mid-90s, and possibly still today, Jessy kept a journal.  In what language did he write his Journal entries?<br/>
+							<input type="radio" name="b" value="v1"> English</input><br/>
+							<input type="radio" name="b" value="v2"> Calculex (Jessy’s invented language)</input><br/>
+							<input type="radio" name="b" value="v3"> Latex</input><br/>
+							<input type="radio" name="b" value="v4"> French</input><br/>
+							<input type="radio" name="b" value="v5"> Italian</input><br/>
+						</li>
+						<li>
+							Jessy grew up on a farm.  What type of farm was it?<br/>
+							<input type="radio" name="n" value="v1"> Proofs & Produce</input><br/>
+							<input type="radio" name="n" value="v2"> Theorem Fields Farm</input><br/>
+							<input type="radio" name="n" value="v3"> Livestock Farm</input><br/>
+							<input type="radio" name="n" value="v4"> Dairy Farm</input><br/>
+							<input type="radio" name="n" value="v5"> Vineyard</input><br/>
+						</li>
+						<li>
+							What might you find Jessy doing in his spare time?<br/>
+							<input type="radio" name="k" value="v1"> Watching math videos</input><br/>
+							<input type="radio" name="k" value="v2"> Taking dance lessons</input><br/>
+							<input type="radio" name="k" value="v3"> Practicing archery</input><br/>
+							<input type="radio" name="k" value="v4"> Growing tomatoes</input><br/>
+							<input type="radio" name="k" value="v5"> Repairing vintage Ford vehicles</input><br/>
+						</li>
+						<li>
+							The first thing that Jessy does in the morning upon waking:<br/>
+							<input type="radio" name="j" value="v1"> Checks his email</input><br/>
+							<input type="radio" name="j" value="v2"> Calls his mother</input><br/>
+							<input type="radio" name="j" value="v3"> Feeds the squirrels</input><br/>
+							<input type="radio" name="j" value="v4"> Checks the stock market</input><br/>
+							<input type="radio" name="j" value="v5"> Does yoga stretches</input><br/>
+						</li>
+						<li>
+							Where did Jessy first meet Laurie?<br/>
+							<input type="radio" name="i" value="v1"> At a campus dance event</input><br/>
+							<input type="radio" name="i" value="v2"> At Mack pool</input><br/>
+							<input type="radio" name="i" value="v3"> On Tinder</input><br/>
+							<input type="radio" name="i" value="v4"> On a hiking trail in France</input><br/>
+							<input type="radio" name="i" value="v5"> At the Gandy Dancer in Ann Arbor</input><br/>
+						</li>
+						<li>
+							What put Jessy in the doghouse with Laurie?<br/>
+							<input type="radio" name="a" value="v1"> Riding a Dirt Bike in 2015</input><br/>
+							<input type="radio" name="a" value="v2"> Forgetting Laurie’s birthday</input><br/>
+							<input type="radio" name="a" value="v3"> Gambling in Vegas</input><br/>
+							<input type="radio" name="a" value="v4"> Doing Math while watching a romantic movie with Laurie</input><br/>
+							<input type="radio" name="a" value="v5"> Taking a sightseeing drive with Mark Spong at IEEE CDC in Maui</input><br/>
+						</li>
+						<li>
+							Which pizza is Jessy most likely to order?<br/>
+							<input type="radio" name="p" value="v1"> Thin crust light on the cheese</input><br/>
+							<input type="radio" name="p" value="v2"> An evolving variety of toppings</input><br/>
+							<input type="radio" name="p" value="v3"> Mushroom and sausage</input><br/>
+							<input type="radio" name="p" value="v4"> Pineapple and extra sauce</input><br/>
+							<input type="radio" name="p" value="v5"> Pepperoni only</input><br/>
+						</li>
+						<li>
+							Where was Jessy born in?<br/>
+							<input type="radio" name="m" value="v1"> Jay, Oklahoma</input><br/>
+							<input type="radio" name="m" value="v2"> Tulsa, Oklahoma</input><br/>
+							<input type="radio" name="m" value="v3"> San Diego, California</input><br/>
+							<input type="radio" name="m" value="v4"> Macon, Georgia</input><br/>
+							<input type="radio" name="m" value="v5"> Urbana Champagne, Illinois</input><br/>
+						</li>
+						<li>
+							Which Professor’s house did Jessy party at that resulted in the Police paying a visit?<br/>
+							<input type="radio" name="d" value="v1"> Prof. Mark Spong</input><br/>
+							<input type="radio" name="d" value="v2"> Prof. Harris McClamroch</input><br/>
+							<input type="radio" name="d" value="v3"> Prof. Kameshwar Poolla</input><br/>
+							<input type="radio" name="d" value="v4"> Prof. Elmer Gilbert</input><br/>
+							<input type="radio" name="d" value="v5"> Prof. Maria Di Benedetto</input><br/>
+						</li>
+						<li>
+							What is Jessy’s favorite spring break location?<br/>
+							<input type="radio" name="f" value="v1"> Ann Arbor, Michigan</input><br/>
+							<input type="radio" name="f" value="v2"> Cancun, Mexico</input><br/>
+							<input type="radio" name="f" value="v3"> Menton, France</input><br/>
+							<input type="radio" name="f" value="v4"> Vieques, Puerto Rico</input><br/>
+							<input type="radio" name="f" value="v5"> Palm Springs, California</input><br/>
+						</li>
+						<li>
+							Who was in the video Jessy played in the first lecture of ROB501?<br/>
+							<input type="radio" name="l" value="v1"> RABBIT</input><br/>
+							<input type="radio" name="l" value="v2"> MABEL</input><br/>
+							<input type="radio" name="l" value="v3"> MARLO</input><br/>
+							<input type="radio" name="l" value="v4"> Laurie</input><br/>
+							<input type="radio" name="l" value="v5"> Bamboo</input><br/>
+						</li>
+						<li>
+							On whose ranch did Jessy work as a graduate student?<br/>
+							<input type="radio" name="g" value="v1"> Prof. Steve Marcus</input><br/>
+							<input type="radio" name="g" value="v2"> Prof. Murray Cantor</input><br/>
+							<input type="radio" name="g" value="v3"> Prof. Bob Mulholland</input><br/>
+							<input type="radio" name="g" value="v4"> Prof. Baxter Womack</input><br/>
+							<input type="radio" name="g" value="v5"> Prof. Michel Fliess</input><br/>
+						</li>
+						<li>
+							Fill in the blank: Jessy is the Director and ________ of the Biped Locomotion Lab?<br/>
+							<input type="radio" name="h" value="v1"> Executor</input><br/>
+							<input type="radio" name="h" value="v2"> Advisor</input><br/>
+							<input type="radio" name="h" value="v3"> Supervisor</input><br/>
+							<input type="radio" name="h" value="v4"> Exterminator</input><br/>
+							<input type="radio" name="h" value="v5"> The so-called boss</input><br/>
+						</li>
+						<li>
+							What was the color of Jessy and Laurie's house when they bought it?<br/>
+							<input type="radio" name="c" value="v1"> Red</input><br/>
+							<input type="radio" name="c" value="v2"> Green</input><br/>
+							<input type="radio" name="c" value="v3"> Blue</input><br/>
+							<input type="radio" name="c" value="v4"> Yellow</input><br/>
+							<input type="radio" name="c" value="v5"> None of the above</input><br/>
+						</li>
+						<li>
+							What is Jessy’s favorite food?<br/>
+							<input type="radio" name="e" value="v1"> Popcorn</input><br/>
+							<input type="radio" name="e" value="v2"> Pasta</input><br/>
+							<input type="radio" name="e" value="v3"> Bananas</input><br/>
+							<input type="radio" name="e" value="v4"> Beef bourguignon</input><br/>
+							<input type="radio" name="e" value="v5"> Cherrios</input><br/>
+						</li>
+						<li>
+							Which University President awarded Jessy a Distinguished University Professorship?<br/>
+							<input type="radio" name="o" value="v1"> Jim Duderstadt</input><br/>
+							<input type="radio" name="o" value="v2"> Lee Bolinger</input><br/>
+							<input type="radio" name="o" value="v3"> Mary Sue Coleman</input><br/>
+							<input type="radio" name="o" value="v4"> Mark Schlissel</input><br/>
+							<input type="radio" name="o" value="v5"> Santa Ono</input><br/>
+						</li>
+					</ol>
+				</form>
+				<button type="button" onclick="this.disabled=true; cook()">Submit</button>
+				<div id = "result"></div>
             </p>
             <hr/>
              <p class="lead">
